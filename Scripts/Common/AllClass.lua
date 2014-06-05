@@ -27,7 +27,7 @@ end
 function ctype(t)
     local _type = type(t)
     if _type == "userdata" then
-        local metatable = getmetatable(t)
+        local metatable = getmetatable(t)A
         if not metatable or not metatable.__index then
             t, _type = "userdata", "string"
         end
